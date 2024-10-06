@@ -1,5 +1,21 @@
-.app-header {
+@import '../../../color-variables';
+
+.app-header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+
+    background-color: $ultraligth-primary-color;
+
+    padding: 15px 50px;
 }
+
+.button{
+    width: 100px;
+    height: 40px;
+
+    background-color: $primary-color;
+    margin-right: 50px;
+}
+
