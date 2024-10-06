@@ -1,0 +1,53 @@
+@import '../../../color-variables';
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Roboto", sans-serif;
+    margin: 50px 50px;
+
+    span{
+        font-size: 20px;
+        font-weight: 700;
+        color: $secondary-text;
+        line-height: 2.5;
+    }
+    h1{
+        color: $primary-color;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 1;
+    }
+}
+
+.business-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: "Poppins", sans-serif;
+    padding: 20px 0;
+
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        color: $secondary-text;
+    }
+    b{
+        color: $primary-color
+    }
+}
+
+@media(min-width: 1080px){
+    .main-section{
+        flex-direction: row;
+    }
+    .business-section{
+        flex-direction: row;
+    }
+}
