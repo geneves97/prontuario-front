@@ -1,53 +1,66 @@
 @import '../../../color-variables';
 
-.main-section {
+.landing-main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
-    font-family: "Roboto", sans-serif;
-    margin: 50px 50px;
-
-    span{
-        font-size: 20px;
-        font-weight: 700;
-        color: $secondary-text;
-        line-height: 2.5;
-    }
-    h1{
-        color: $primary-color;
-        font-size: 60px;
-        font-weight: 900;
-        line-height: 1;
-    }
-}
-
-.business-section{
+    padding: 50px;
+    background-color: $ultraligth-primary-color;
+  }
+  
+  .main-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
     
-    font-family: "Poppins", sans-serif;
-    padding: 20px 0;
-
-    p{
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 1;
-        color: $secondary-text;
+    .headline {
+      max-width: 600px;
+  
+      .brand-name {
+        font-size: 1.8rem;
+        color: $primary-color;
+        font-weight: bold;
+      }
+  
+      h1 {
+        font-size: 2.5rem;
+        color: $darker-primary-color;
+        margin-bottom: 20px;
+      }
+  
+      .business-section {
+        p {
+          font-size: 1.1rem;
+          color: $secondary-color;
+          line-height: 1.6;
+  
+          b {
+            color: $primary-color;
+          }
+        }
+      }
     }
-    b{
-        color: $primary-color
+  
+    .image {
+      max-width: 500px;
+      height: auto;
     }
-}
-
-@media(min-width: 1080px){
-    .main-section{
-        flex-direction: row;
+  }
+  
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      text-align: center;
     }
-    .business-section{
-        flex-direction: row;
+  
+    .headline {
+      max-width: 100%;
     }
-}
+  
+    .image {
+      max-width: 100%;
+    }
+  }
+  

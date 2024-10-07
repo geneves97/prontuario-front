@@ -1,0 +1,31 @@
+<section class="sidebar" [class.collapsed]="isCollapsed">
+  <nav class="navbar">
+    <button mat-icon-button class="toggle-button" (click)="toggleSidebar()">
+      <mat-icon>{{ isCollapsed ? 'menu_open' : 'menu' }}</mat-icon>
+    </button>
+    <button mat-fab extended class="nav-item" *ngIf="!isCollapsed">
+      <mat-icon>home</mat-icon>
+      Início
+    </button>
+    <button mat-fab extended class="nav-item" *ngIf="!isCollapsed">
+      <mat-icon>people</mat-icon>
+      Pacientes
+    </button>
+    <button mat-fab extended class="nav-item" *ngIf="!isCollapsed">
+      <mat-icon>calendar_today</mat-icon>
+      Consultas
+    </button>
+    
+    <!-- Quando colapsada, mostrar só ícones -->
+    <button mat-icon-button class="nav-item" *ngIf="isCollapsed">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button class="nav-item" *ngIf="isCollapsed">
+      <mat-icon>people</mat-icon>
+    </button>
+    <button mat-icon-button class="nav-item" *ngIf="isCollapsed">
+      <mat-icon>calendar_today</mat-icon>
+    </button>
+  </nav>
+</section>
+  

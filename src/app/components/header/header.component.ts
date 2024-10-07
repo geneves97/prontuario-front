@@ -1,6 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { NavbarComponent } from "../navbar/navbar.component";
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
